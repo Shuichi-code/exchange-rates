@@ -1,3 +1,19 @@
 # Exchange Rates UI
 
-Placeholder for the Angular frontend application. The project is not initialized yet; this space is reserved for future setup notes.
+Simple Angular 17+ frontend for the CNB exchange rates API.
+
+## Setup
+
+```bash
+npm install
+```
+
+## Start dev server
+
+```bash
+npm start
+# or
+ng serve
+```
+
+The backend API must be running at `http://localhost:5000` (see `src/environments/environment.ts`).

@@ -1,0 +1,49 @@
+<div class="page">
+  <header class="header">
+    <h1>CNB Exchange Rates</h1>
+    <p class="subtitle" *ngIf="asOfDate">As of: {{ asOfDate | date: 'mediumDate' }}</p>
+  </header>
+
+  <div *ngIf="loading" class="status">Loading…</div>
+  <div *ngIf="!loading && error" class="status error">{{ error }}</div>
+
+  <section *ngIf="!loading && !error" class="content">
+    <div class="controls">
+      <label class="search">
+        <span class="label">Search</span>
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          placeholder="Filter by code, country, or currency"
+          aria-label="Search exchange rates"
+        />
+      </label>
+      <p class="helper">Rate is CZK for the given Amount (raw CNB format).</p>
+    </div>
+
+    <table class="rates-table" *ngIf="filteredRates.length; else noResults">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Currency</th>
+          <th>Country</th>
+          <th class="numeric">Amount</th>
+          <th class="numeric">Rate (CZK)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let rate of filteredRates">
+          <td>{{ rate.code }}</td>
+          <td>{{ rate.currencyName }}</td>
+          <td>{{ rate.country }}</td>
+          <td class="numeric">{{ rate.amount }}</td>
+          <td class="numeric">{{ rate.rateCzk | number: '1.4-4' }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #noResults>
+      <div class="status muted">No rates found.</div>
+    </ng-template>
+  </section>
+</div>
