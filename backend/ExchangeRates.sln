@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRates.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRates.Infrastructure", "ExchangeRates.Infrastructure\ExchangeRates.Infrastructure.csproj", "{7251B72F-D2AA-47A0-B83F-EC510AB2D809}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRates.Tests", "ExchangeRates.Tests\ExchangeRates.Tests.csproj", "{3D0393F3-C136-494F-AB11-1E77A43C0DA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{7251B72F-D2AA-47A0-B83F-EC510AB2D809}.Release|x64.Build.0 = Release|Any CPU
 		{7251B72F-D2AA-47A0-B83F-EC510AB2D809}.Release|x86.ActiveCfg = Release|Any CPU
 		{7251B72F-D2AA-47A0-B83F-EC510AB2D809}.Release|x86.Build.0 = Release|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Debug|x64.Build.0 = Debug|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Debug|x86.Build.0 = Debug|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Release|x64.ActiveCfg = Release|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Release|x64.Build.0 = Release|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Release|x86.ActiveCfg = Release|Any CPU
+		{3D0393F3-C136-494F-AB11-1E77A43C0DA5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
